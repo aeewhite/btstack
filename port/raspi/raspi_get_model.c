@@ -49,6 +49,19 @@ int raspi_get_model()
     case 0x9020e0:
         model = MODEL_3APLUS;
         break;
+    case 0xa03111:
+    case 0xb03111:
+    case 0xb03112:
+    case 0xb03114:
+    case 0xb03115:
+    case 0xc03111:
+    case 0xc03112:
+    case 0xc03114:
+    case 0xc03115:
+    case 0xd03114:
+    case 0xd03115:
+        model = MODEL_4B;
+        break;
     default:
         break;
     }

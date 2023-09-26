@@ -364,7 +364,7 @@ int main(int argc, const char * argv[]){
             power_cycle = false;
 #else
             // warn about power cycle on devices with shared reg_en pins
-            if (model == MODEL_3APLUS || model == MODEL_3BPLUS){
+            if (model == MODEL_3APLUS || model == MODEL_3BPLUS || model == MODEL_4B){
                 printf("Wifi and Bluetooth share a single RESET line and BTstack needs to reset Bluetooth -> SSH over Wifi will fail\n");
                 printf("Please add ENABLE_CONTROLLER_WARM_BOOT to btstack_config.h to enable startup without RESET\n");
             }
